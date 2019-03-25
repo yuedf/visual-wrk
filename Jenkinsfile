@@ -17,7 +17,7 @@ pipeline {
 					name : 'concurrency')
 
 			string (
-					defaultValue: '5m',
+					defaultValue: '10s',
 					description: 'Duration of test, time arguments may include a time unit (2s, 2m, 2h)',
 					name : 'duration')
 
@@ -27,8 +27,8 @@ pipeline {
 					name : 'sample_interval')
 
 			string (
-					defaultValue: 'https://navicore.mapbar.com',
-					description: 'url(default read from json), example:https://navicore.mapbar.com',
+					defaultValue: 'http://211.159.171.115:8089/',
+					description: 'url(default read from json), example:http://211.159.171.115:8089/',
 					name : 'WRK_URL')
 	}
 	stages {
