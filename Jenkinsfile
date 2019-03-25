@@ -2,9 +2,9 @@
 
 pipeline {
 	agent any
-		options {                  
-			buildDiscarder(logRotator(numToKeepStr: '25'))
-		}
+	options {                  
+		buildDiscarder(logRotator(numToKeepStr: '25'))
+	}
 	parameters {               
 		choice (               
 				choices:'data/method_get.json\ndata/method_post.json\ndata/method_post_base64.json\ndata/mixed_test.json',
