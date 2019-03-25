@@ -32,13 +32,6 @@ pipeline {
 					name : 'WRK_URL')
 	}
 	stages {
-		stage('make') { 
-			steps {
-				echo 'making...'
-					sh('make')
-					sh('make install')
-			}
-		}
 		stage('Test') { 
 			steps {
 				echo 'testing...'           
