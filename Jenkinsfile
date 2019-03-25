@@ -32,7 +32,7 @@ pipeline {
 					name : 'WRK_URL')
 	}
 	stages {
-		stage('Test') { 
+		stage('make') { 
 			steps {
 				echo 'making...'
 					sh('make')
